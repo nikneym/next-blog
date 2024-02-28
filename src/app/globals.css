@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --slider-width: 250px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,18 +17,67 @@
   }
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #33302f;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@layer components {
+  .main-wrapper {
+    @apply relative flex flex-col m-auto w-full h-full lg:w-[45rem] px-4 gap-8 mt-4 mb-8
+  }
+}
+
+::selection {
+  background: #f472b6; /* WebKit/Blink Browsers */
+  color: white;
+}
+
+::-moz-selection {
+  background: #f472b6; /* Gecko Browsers */
+  color: white;
+}
+
+.drawer {
+  background: #211f1f;
+  height: 100%;
+  min-width: 16rem;
+  /* width: 100%; */
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  z-index: 49;
+}
+
+@keyframes scroll {
+  0%   { transform: translateX(0) }
+  100% { transform: translateX(calc(-250px * 7)) }
+}
+
+.slider {
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-track {
+  animation: scroll 10s linear infinite;
+  display: flex;
+  width: calc(250px * 10);
 }

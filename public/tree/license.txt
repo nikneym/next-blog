@@ -1,0 +1,11 @@
+Model Information:
+* title:	Voxel tree
+* source:	https://sketchfab.com/3d-models/voxel-tree-38643882f8d5436191cbc29f3ad46cde
+* author:	mastergames2435 (https://sketchfab.com/mastergames243534)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Voxel tree" (https://sketchfab.com/3d-models/voxel-tree-38643882f8d5436191cbc29f3ad46cde) by mastergames2435 (https://sketchfab.com/mastergames243534) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

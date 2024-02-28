@@ -8,10 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        roboto: "var(--font-roboto)",
+      },
+      colors: {
+        primary: "#94ebeb",
+        accent: "#fbb86c",
+        ground: "#33302f",
+        ["accent-darker"]: "#faac53",
+        ["soft-gray"]: "#433f3e",
+        ["hover-tone"]: "#211f1f",
       },
     },
   },
