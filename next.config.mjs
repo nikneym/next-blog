@@ -7,7 +7,6 @@ const nextConfig = {
     // loader can be 'default', 'imgix', 'cloudinary', 'akamai', or 'custom'
     loader: "default",
   },
-  output: "export",
 };
 
 export default nextConfig;
